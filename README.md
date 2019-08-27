@@ -12,6 +12,36 @@
 
 替换为220的键盘，功能各方面都没问题
 
+
+# 记录一下修改 BCM 4322AG APPLE ID及HK代码以支持5G
+
+U盘安装ubuntukylin16.04 32位版，确保能通过有线网络上网，打开终端，输入lspci -V， 确认有BCM无线网卡的信息后依次输入以下命令
+
+- sudo apt-get update
+- sudo apt-get install build-essential
+- sudo apt-get install curl
+- sudo apt-get install git-core
+- sudo apt-get install b43-fwcutter
+- sudo modprobe b43
+- git clone git://git.bues.ch/b43-tools.git
+- cd b43-tools/ssb_sprom
+- make
+- sudo cp ssb-sprom /usr/sbin/
+- sudo chmod 755 /usr/sbin/ssb-sprom
+- sudo chown root:root /usr/sbin/ssb-sprom
+- SSB_SPROM=$(find /sys/devices -name ssb_sprom)
+- echo $SSB_SPROM
+- cd ~
+- sudo cat $SSB_SPROM > ssb_sprom_copy
+- ssb-sprom -i ssb_sprom_copy -P
+- ssb-sprom -i ssb_sprom_copy --subv 0x106b --subp 0x004E --ccode HK -o new_ssb_sprom_copy
+- ssb-sprom -i new_ssb_sprom_copy -P
+- echo $SSB_SPROM
+- sudo cp new_ssb_sprom_copy $SSB_SPROM
+
+
+# ----------------------------------------------------------
+
 https://imgur.com/a/pKfFYet
 
 Relevant specs of my X230: 
