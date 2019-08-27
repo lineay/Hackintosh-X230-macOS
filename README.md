@@ -1,3 +1,16 @@
+x230 配置
+CPU: Intel i5-3230M 2.60GHz
+RAM: 16GB DDR3
+Storage: 128GB SSD
+LAN: Intel 82579LM
+WIFI: BCM 4322AG
+OS: macOS Mojave 10.14.6
+Bootloader: Clover v2.5K r5058 UEFI
+EFI BIOS: 2.67
+ECV BIOS: 1.14
+
+替换为220的键盘，功能各方面都没问题
+
 # Hackintosh-X230-macOS
 
 https://imgur.com/a/pKfFYet
