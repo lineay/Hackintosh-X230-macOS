@@ -16,9 +16,19 @@
 			<false/>
 			<key>Fixes</key>
 			<dict>
-				<key>FixAirport</key>
+				<key>AddMCHC</key>
 				<true/>
-				<key>FixShutdown</key>
+				<key>FixHPET</key>
+				<true/>
+				<key>FixIPIC</key>
+				<true/>
+				<key>FixMutex</key>
+				<true/>
+				<key>FixRTC</key>
+				<true/>
+				<key>FixRegions</key>
+				<true/>
+				<key>FixTMR</key>
 				<true/>
 			</dict>
 			<key>Name</key>
