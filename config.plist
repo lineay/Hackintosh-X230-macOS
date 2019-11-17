@@ -11,19 +11,16 @@
 			<key>Fixes</key>
 			<dict>
 				<key>AddMCHC</key>
-<<<<<<< HEAD
 				<true/>
 				<key>FixHPET</key>
 				<true/>
 				<key>FixIPIC</key>
 				<true/>
-=======
 				<true/>
 				<key>FixHPET</key>
 				<true/>
 				<key>FixIPIC</key>
 				<true/>
->>>>>>> ba78a9e55ae0d8ad23ec62a0fc70c798005181d7
 				<key>FixMutex</key>
 				<true/>
 				<key>FixRTC</key>
